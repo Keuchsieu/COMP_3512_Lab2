@@ -3,8 +3,9 @@
 using namespace std;
 
 class Stack {
-	// e)
-	int elements[10]; //should the constexpr go here? it has to be defined to become a constexpr isnt it
+	// e) copied code structure from lecture 03 20180112, page 28-29; won't work
+	constexpr maximumSize{10};
+	int elements[maximumSize]; //should the constexpr go here? it has to be defined to become a constexpr isnt it
 	int topPoint;
 public:
 	// f) constructor
