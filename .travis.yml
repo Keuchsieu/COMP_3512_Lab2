@@ -1,5 +1,3 @@
-cd Stack/Stack
-
 language: cpp
 
 compiler: 
