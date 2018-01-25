@@ -4,3 +4,6 @@ compiler:
   - gcc
   
 cd Stack/Stack
+
+script:
+ - "gcc -Wall -pedantic Stacktester.cpp"
