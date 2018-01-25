@@ -4,4 +4,4 @@ compiler:
   - g++
 
 script:
- - "g++ -Wall -pedantic Stack/Stack/Stacktester.cpp"
+ - "g++ -Wall -pedantic -std=c++11 Stack/Stack/Stacktester.cpp"
