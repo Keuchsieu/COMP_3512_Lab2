@@ -1,7 +1,7 @@
 language: cpp
 
 compiler: 
-  - gcc
+  - g++
 
 script:
- - "gcc -Wall -std=c++14 -pedantic Stack/Stack/Stacktester.cpp"
+ - "g++ -Wall -std=c++14 -pedantic Stack/Stack/Stacktester.cpp"
