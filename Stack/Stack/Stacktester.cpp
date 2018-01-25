@@ -9,6 +9,9 @@ int main()
 	// test empty stack
 	s.print();
 	cout << "empty stack: " << s.empty() << endl;
+	cout << "pop when stack is empty" << endl;
+	s.pop(); // nothing happens when pop an empty stack
+	s.print();
 	// test g) push
 	for (int i = 0; i < 10; ++i) {
 		cout << "pushing to stack [" << i <<"]";
@@ -22,6 +25,11 @@ int main()
 	cout << "full stack after 10 int: " << s.full() << endl;
 	cout << "empty stack after push: " << s.empty() << endl;
 	s.print();
+	// test push after full
+	s.push(123234); // nothing happens when push to a full stack
+	cout << "push after stack full" << endl;
+	s.print();
+
 	// test h) pop
 	for (int i = 0; i < 10; ++i) {
 		s.pop();
