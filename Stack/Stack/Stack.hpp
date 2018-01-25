@@ -1,25 +1,51 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+// e)
+constexpr int maximumSize{ 10 };
 
 class Stack {
-	// e) copied code structure from lecture 03 20180112, page 28-29; won't work
-	static constexpr int maximumSize{10};
-	int elements[maximumSize]; //should the constexpr go here? it has to be defined to become a constexpr isnt it
+	// e) older commit uses this for Stack class
+	//static constexpr int maximumSize{10};
+	int elements[maximumSize];
 	int topPoint;
 public:
 	// f) constructor
 	Stack() : topPoint(-1) {};
-	// g)
+
+	// g) takes an int and push into the stack
+	// PRE: Stack not full
+	// POST: Stack has one more element
+	// no return 
 	void push(int);
-	// h)
+
+	// h) pops the Stack by one element
+	// PRE: Stack not empty
+	// POST: Stack has one less element
+	// no return
 	void pop();
-	// i)
+
+	// i) returns the top position of the stack
+	// PRE: Stack not empty
+	// POST: Stack not changed
+	// return the current top element's value
 	int top() const;
-	// j)
+
+	// j) checks if the stack is empty
+	// PRE: None
+	// POST: Stack not changed
+	// returns boolean true when stack is empty, false when stack isn't
 	bool empty() const;
-	// k)
+
+	// k) checks if the stack is full
+	// PRE: None
+	// POST: Stack not changed
+	// returns boolean true when stack is full, false when stack isn't
 	bool full() const;
-	// l)
+
+	// l) prints out the whole stack
+	// PRE: None
+	// POST: Stack not changed
+	// no returns
 	void print() const;
 };

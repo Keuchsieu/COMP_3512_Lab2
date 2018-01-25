@@ -15,6 +15,8 @@ int main()
 		s.push(i+10);
 		// test i) top
 		cout << " with current top value: " << s.top() << endl;
+		cout << "is stack empty? " << s.empty() << endl;
+		cout << "is stack full? " << s.full() << endl;
 	}
 	// test k) full
 	cout << "full stack after 10 int: " << s.full() << endl;
@@ -25,6 +27,8 @@ int main()
 		s.pop();
 		// test i) top
 		cout << "current top value after pop: " << s.top() << endl;
+		cout << "is stack empty? " << s.empty() << endl;
+		cout << "is stack full? " << s.full() << endl;
 	}
 	// test j) empty
 	cout << "empty stack after pop: " << s.empty() << endl;
