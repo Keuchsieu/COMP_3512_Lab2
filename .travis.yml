@@ -3,7 +3,5 @@ language: cpp
 compiler: 
   - gcc
 
-cd Stack/Stack
-
 script:
- - "gcc -Wall -pedantic Stacktester.cpp"
+ - "gcc -Wall -pedantic Stack/Stack/Stacktester.cpp"
