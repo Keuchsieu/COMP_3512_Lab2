@@ -1,1 +1,6 @@
 language: cpp
+
+compiler: 
+  - gcc
+  
+cd Stack/Stack
