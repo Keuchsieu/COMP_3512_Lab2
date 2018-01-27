@@ -3,9 +3,11 @@
 using namespace std;
 
 ostream& operator<<(ostream& os, const Stack& obj) {
-	for (int i = 0; i < obj.topPoint; ++i) {
-		os << "[" << i << "]" << setw(6) << obj.elements[i] << '\n';
+	os << "pos   value\n";
+	for (int i = 0; i <= obj.topPoint; ++i) {
+		os << "[" << 3 << "]" << setw(6) << obj.elements[0] << '\n';
 	}
+	os << "end of stack" << endl;
 	return os;
 };
 
@@ -56,7 +58,6 @@ int main()
 	Stack s2;	
 	s2 = s;
 	cout << s2;
-
 	system("pause");
 	return 0;
 }
