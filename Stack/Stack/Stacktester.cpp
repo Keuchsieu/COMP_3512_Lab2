@@ -2,7 +2,12 @@
 #include "Stack.hpp"
 using namespace std;
 
-
+ostream& operator<<(ostream& os, const Stack& obj) {
+	for (int i = 0; i < obj.topPoint; ++i) {
+		os << "[" << i << "]" << setw(6) << obj.elements[i] << '\n';
+	}
+	return os;
+};
 
 int main()
 {
@@ -45,12 +50,12 @@ int main()
 	cout << "full stack after pop: " << s.full() << endl;
 	s.print();
 
-	// test stack copy 
+	// test stack copy and print with overloaded insertion operator 
 	cout << "test copy one element \'123\'" << endl;
 	s.push(123);
 	Stack s2;	
 	s2 = s;
-	s2.print();
+	cout << s2;
 
 	system("pause");
 	return 0;

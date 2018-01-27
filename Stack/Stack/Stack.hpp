@@ -49,6 +49,8 @@ public:
 	// no returns
 	void print() const;
 
+	friend ostream& operator<<(ostream&, const Stack& obj);
+
 	// quiz overload '=' operator
 	// PRE: Use on Stack object
 	// POST: copy the object
