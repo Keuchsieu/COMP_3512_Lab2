@@ -48,4 +48,10 @@ public:
 	// POST: Stack not changed
 	// no returns
 	void print() const;
+
+	// quiz overload '=' operator
+	// PRE: Use on Stack object
+	// POST: copy the object
+	// returns the copy of a stack
+	Stack& operator=(Stack other);
 };

@@ -2,6 +2,8 @@
 #include "Stack.hpp"
 using namespace std;
 
+
+
 int main()
 {
 	cout << boolalpha;
@@ -42,6 +44,14 @@ int main()
 	cout << "empty stack after pop: " << s.empty() << endl;
 	cout << "full stack after pop: " << s.full() << endl;
 	s.print();
+
+	// test stack copy 
+	cout << "test copy one element \'123\'" << endl;
+	s.push(123);
+	Stack s2;	
+	s2 = s;
+	s2.print();
+
 	system("pause");
 	return 0;
 }
